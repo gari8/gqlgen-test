@@ -1,0 +1,19 @@
+scalar DateTime
+
+type TimeTable {
+    id: ID!
+    todos: [Todo!]!
+}
+
+input NewTimeTable {
+    ids: [ID!]!
+}
+
+extend type Query {
+    timeTables: [TimeTable!]!
+    timeTable(id: ID!): TimeTable
+}
+
+extend type Mutation {
+    createTimeTable(input: NewTimeTable!): TimeTable!
+}

@@ -1,0 +1,11 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+input NewTodo {
+  text: String!
+  userId: String!
+}
+
+type Query
+type Mutation

@@ -1,0 +1,8 @@
+CREATE DATABASE graph;
+USE graph;
+
+CREATE TABLE users (
+  `id` VARCHAR(36) NOT NULL,
+  `name` VARCHAR(20) NOT NULL,
+  PRIMARY KEY(`id`)
+) ENGINE=InnoDB;
